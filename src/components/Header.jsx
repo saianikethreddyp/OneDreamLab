@@ -11,7 +11,7 @@ const Header = () => {
                 top: 0,
                 left: 0,
                 right: 0,
-                padding: '24px 40px',
+                padding: '24px clamp(20px, 5vw, 40px)',
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center',

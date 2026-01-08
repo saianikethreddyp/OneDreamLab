@@ -25,10 +25,10 @@ const Marquee = () => {
                 >
                     {[...logos, ...logos, ...logos].map((logo, index) => (
                         <div key={index} style={{
-                            fontSize: '4rem',
+                            fontSize: 'clamp(3rem, 6vw, 4rem)',
                             fontFamily: 'var(--font-heading)',
                             fontWeight: 800,
-                            marginRight: '80px',
+                            marginRight: 'clamp(40px, 5vw, 80px)',
                             opacity: 0.5,
                             color: 'var(--text-maroon)'
                         }}>

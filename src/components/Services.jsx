@@ -92,11 +92,11 @@ const Services = () => {
     const [openIndex, setOpenIndex] = useState(0);
 
     return (
-        <section style={{ padding: '100px 20px', maxWidth: '1000px', margin: '0 auto' }}>
+        <section style={{ padding: '80px 20px', maxWidth: '1000px', margin: '0 auto' }}>
             <h2 style={{
-                fontSize: '4rem',
+                fontSize: 'clamp(2.5rem, 8vw, 4rem)',
                 textAlign: 'center',
-                marginBottom: '80px',
+                marginBottom: '60px',
                 textTransform: 'uppercase',
                 letterSpacing: '-0.02em'
             }}>

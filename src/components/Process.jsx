@@ -26,7 +26,7 @@ const steps = [
 const Process = () => {
     return (
         <section style={{
-            padding: '120px 20px',
+            padding: '80px 20px',
             backgroundColor: 'var(--text-maroon)',
             color: 'var(--bg-cream)',
             borderRadius: '40px',
@@ -34,8 +34,8 @@ const Process = () => {
         }}>
             <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
                 <h2 style={{
-                    fontSize: 'clamp(3rem, 5vw, 5rem)',
-                    marginBottom: '80px',
+                    fontSize: 'clamp(2.5rem, 8vw, 5rem)',
+                    marginBottom: '60px',
                     textAlign: 'center'
                 }}>
                     Our Process

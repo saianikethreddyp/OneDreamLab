@@ -56,7 +56,7 @@ const Testimonials = () => {
                         <motion.div
                             key={i}
                             style={{
-                                minWidth: '400px',
+                                minWidth: 'clamp(300px, 85vw, 400px)',
                                 backgroundColor: item.color,
                                 padding: '60px',
                                 borderRadius: '40px',
