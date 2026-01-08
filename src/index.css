@@ -1,0 +1,95 @@
+:root {
+  --bg-cream: #FDFBF2;
+  --text-maroon: #3D0B1B;
+  --accent-lime: #D4E87C;
+  --accent-pink: #F4C4D3;
+  --accent-lavender: #C6C0F8;
+  --accent-blue: #C5E0FA;
+  --accent-orange: #F9C8A0;
+
+  --font-heading: 'Syne', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+
+  --radius-sm: 12px;
+  --radius-md: 24px;
+  --radius-lg: 40px;
+  --radius-full: 9999px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-cream);
+  color: var(--text-maroon);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-maroon);
+  border-radius: 5px;
+  border: 2px solid var(--bg-cream);
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .hero-stickers {
+    display: none !important;
+  }
+
+  /* Override inline paddings for sections if they are too large */
+  section {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+
+  /* Adjust huge headings */
+  h1 {
+    font-size: clamp(3rem, 10vw, 4rem) !important;
+  }
+
+  h2 {
+    font-size: clamp(2.5rem, 8vw, 3.5rem) !important;
+  }
+}
