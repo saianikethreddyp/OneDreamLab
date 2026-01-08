@@ -14,11 +14,11 @@ const Contact = () => {
             <div style={{
                 backgroundColor: '#FFF9C4', // The specific yellow from the reference
                 borderRadius: '40px',
-                padding: 'clamp(30px, 5vw, 80px)',
+                padding: 'clamp(24px, 5vw, 80px)', // Reduced min padding for small screens
                 maxWidth: '1200px',
                 width: '100%',
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 350px), 1fr))', // bulletproof wrapping
                 gap: 'clamp(40px, 5vw, 80px)',
                 position: 'relative',
                 overflow: 'hidden' // for any decorative leaks
@@ -67,10 +67,10 @@ const Contact = () => {
 
                 {/* Right Column: Form */}
                 <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                    <form onSubmit={(e) => e.preventDefault()} style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
+                    <form onSubmit={(e) => e.preventDefault()} style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(24px, 4vw, 40px)' }}>
 
                         {['Name', 'Email', 'Phone'].map((label) => (
-                            <div key={label} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                            <div key={label} style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                                 <label style={{
                                     fontFamily: 'var(--font-heading)',
                                     fontWeight: 700,
