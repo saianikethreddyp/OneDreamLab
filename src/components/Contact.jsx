@@ -13,13 +13,13 @@ const Contact = () => {
             {/* The Card Component - Matching the reference image style */}
             <div style={{
                 backgroundColor: '#FFF9C4', // The specific yellow from the reference
-                borderRadius: '60px',
-                padding: '80px',
+                borderRadius: '40px',
+                padding: 'clamp(30px, 5vw, 80px)',
                 maxWidth: '1200px',
                 width: '100%',
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                gap: '80px',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+                gap: 'clamp(40px, 5vw, 80px)',
                 position: 'relative',
                 overflow: 'hidden' // for any decorative leaks
             }}>
@@ -49,7 +49,7 @@ const Contact = () => {
                     <h2 style={{
                         fontFamily: 'var(--font-heading)',
                         color: 'var(--text-maroon)',
-                        fontSize: '2.5rem',
+                        fontSize: 'clamp(2rem, 5vw, 2.5rem)',
                         marginBottom: '16px'
                     }}>
                         Need a custom quote?
@@ -125,16 +125,17 @@ const Contact = () => {
                             whileTap={{ scale: 0.98 }}
                             style={{
                                 marginTop: '20px',
-                                backgroundColor: '#FBC02D', // Darker yellow/gold for button
+                                backgroundColor: '#FBC02D',
                                 color: 'var(--text-maroon)',
                                 border: 'none',
-                                padding: '24px',
+                                padding: 'clamp(16px, 4vw, 24px)',
                                 borderRadius: '99px',
                                 fontSize: '1.2rem',
                                 fontWeight: 700,
                                 fontFamily: 'var(--font-heading)',
                                 cursor: 'pointer',
-                                boxShadow: '0 4px 0 rgba(61, 11, 27, 1)' // Hard shadow for retro feel
+                                boxShadow: '0 4px 0 rgba(61, 11, 27, 1)',
+                                width: '100%'
                             }}
                         >
                             Submit Message

@@ -1,38 +1,49 @@
 # One Dream Lab
 
-A high-fidelity, premium agency landing page built with React, Vite, and Framer Motion.
+A high-fidelity landing page developed as a freelance project for One Dream Lab. This application typically serves as a digital touchpoint for the agency, showcasing their services, portfolio, and brand identity through advanced web technologies.
 
-## 🚀 About the Project
+## Project Overview
 
-This is a **Freelance Project** developed for One Dream Lab.
+This project was engineered to meet specific design requirements, focusing on:
 
-The goal was to create a "same-to-same" replica of a high-end reference design, featuring:
-- **Advanced Animations**: Spring physics, scroll parallax, and magnetic interactions using Framer Motion.
-- **Modern Tech Stack**: React (Vite) for performance and component architecture.
-- **Responsive Design**: Fully optimized for mobile, tablet, and desktop.
-- **Custom Assets**: Integration of 3D illustrations and specific branding assets.
+*   **High-Fidelity Replication**: Accurate implementation of the provided design mockups.
+*   **Advanced Interactivity**: Utilization of physics-based animations, scroll-triggered effects, and magnetic UI interactions.
+*   **Responsiveness**: Fully optimized layouts for mobile, tablet, and desktop viewports.
+*   **Performance**: built on a modern toolchain for optimal load times and runtime performance.
 
-## 🛠️ Tech Stack
-- React 19
-- Framer Motion
-- Lucide React
-- Vite
+## Technology Stack
 
-## 🏃‍♂️ Getting Started
+*   **Core Framework**: React 19
+*   **Build Tool**: Vite
+*   **Animation Library**: Framer Motion
+*   **Iconography**: Lucide React
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
+## Getting Started
 
-## 📱 Features
-- Interactive Hero with Mouse Parallax
-- Infinite Marquee
-- Draggable Testimonials
-- Scroll-based Parallax Portfolio
-- Magnetic UI Elements
+To run this project locally, follow these steps:
+
+1.  **Clone the repository**
+    
+    ```bash
+    git clone https://github.com/saianikethreddyp/OneDreamLab.git
+    ```
+
+2.  **Install dependencies**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server**
+
+    ```bash
+    npm run dev
+    ```
+
+## Key Features
+
+*   **Mouse Parallax Integration**: Interactive elements that respond to cursor movement in the Hero section.
+*   **Infinite Marquee**: Seamless horizontal scrolling for partner/client logos.
+*   **Draggable Testimonials**: Touch-enabled carousel for client reviews.
+*   **Scroll Parallax**: Depth effects applied to portfolio items and background elements during page scroll.
+*   **Magnetic Buttons**: UI components that attract the cursor for enhanced usability.
